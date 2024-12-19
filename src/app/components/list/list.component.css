@@ -1,0 +1,12 @@
+.footer-list{
+  background: #ffffff;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  height: 30px;
+  font-size: 8px;
+}

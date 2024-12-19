@@ -1,0 +1,44 @@
+<div class="pokeFather">
+  <h1 style="text-align: center"> THIS IS {{ pokemon?.name?.toUpperCase() }}!</h1>
+
+  <div class="imgFather" (click)="playAudio()">
+    <img style="cursor: pointer" [src]="pokemon?.sprites?.front_default">
+  </div>
+  <audio style="display: none" #audioElement>
+    <source [src]="pokemon?.cries?.latest" type="audio/mpeg"/>
+  </audio>
+
+  <div class="statistics">
+    @for (stat of filteredStats; track stats) {
+      <div class="stat">
+        <div class="stat-name">{{ stat.stat.name }}</div>
+        <div class="stat-bar">
+          <div
+            [ngStyle]="{ 'width': getBarWidth(stat.base_stat) + '%', 'background-color': getStatColor(stat.stat.name) }"
+            class="bar"></div>
+        </div>
+        <div class="stat-value">{{ stat.base_stat }}</div>
+      </div>
+    }
+  </div>
+
+  <div class="abilities">
+    <h3>Abilities</h3>
+
+    <div class="ablList">
+      @for (ability of abilities; track ability) {
+        <div class="ability">
+          <div class="ability-name">{{ ability.ability.name }}</div>
+          @if (ability.is_hidden) {
+            <div class="hidden-ability">(Hidden Ability)</div>
+          }
+        </div>
+      }
+    </div>
+
+  </div>
+</div>
+
+
+
+

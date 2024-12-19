@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html{
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+
+table{
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-mdc-table mdc-data-table__table cdk-table{
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-mdc-table{
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-mdc-cell, .mat-mdc-header-cell {
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-mdc-header-cell{
+ font-size: 9px;
+}
+
+input{
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-column-button button{
+  position: relative;
+  left: 70px;
+  font-family: 'Press Start 2P', sans-serif!important;
+}
+
+.mat-column-name{
+  width: 288px!important;
+  overflow: hidden;
+}
+
+mat-mdc-cell{
+  max-width: 288px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #451b1b;
+
+}
+
+header {
+  background: white;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  scale: 120%;
+}
+
+header img {
+  pointer-events: none;
+  height: 100%;
+
+}
+
+
+.app-content-main {
+  overflow: hidden;
+  width: 500px;
+  height: 700px;
+  background: crimson;
+
+  display: flex;
+  flex-direction: column;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  filter: drop-shadow(10px 10px 4px #000000);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+}
+
+.mat-mdc-cell, .mat-mdc-header-cell {
+  border-bottom-color: black !important;
+}
+
+.mdc-button__label {
+  font-size: 30px;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+
+
+table .mdc-button__label{
+  font-size: unset;
+}
+

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Router, RouterOutlet} from '@angular/router';
+import {PokemonService} from './services/pokemon/pokemon.service';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,14 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent{
   title = 'Pokemons';
+
+
+  constructor(private router:Router) {
+  }
+
+  goToList() {
+    this.router.navigateByUrl('/list')
+  }
 }

@@ -1,0 +1,98 @@
+.pokeFather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.pokeFather img{
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: crimson;
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.imgFather:hover{
+  scale: 110%;
+}
+
+
+/* pokemon-statistics.component.css */
+.statistics {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  width: 70px;
+}
+
+.stat-name {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.stat-value {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.stat-bar {
+  background-color: #e0e0e0; /* Light gray background for the progress bar */
+  width: 100%;
+  height: 20px; /* Height of the stat bar */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%; /* Bar takes full height of the container */
+  transition: width 0.5s ease; /* Smooth transition when the width changes */
+}
+
+.abilities {
+  margin-top: 20px;
+  color: black;
+
+}
+
+.ablList{
+  overflow: hidden;
+  overflow-y: auto;
+  height: 121px;
+}
+
+.abilities h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.ability {
+  background-color: #e0f7fa;
+  border: 1px solid #00796b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.ability-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hidden-ability {
+  font-size: 14px;
+  color: #d32f2f;
+  font-style: italic;
+}
